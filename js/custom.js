@@ -9,10 +9,12 @@
 */
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz6YgNLfBwAsoIrRF3dbCLLpx4-BiC85X1SdMeQB1R4ZXvKE3wyO2yYdlRQ_oGHlzMLFA/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx1GhN66LsFZTdu1SdToHUKplLT3B42GabKGuparNy-sisKiY_LfmF8bF87mbLQ--t1/exec'
 const form = document.forms['contactform']
 
 form.addEventListener('submit', e => {
+       let num= $("#number").val();
+       console.log(num)
         let nameFound = nameCheck();
     let numberFound = numberCheck();
     let emailFound = emailCheck();
